@@ -1,9 +1,11 @@
 #include "shell.h"
+
 /**
  * _strlen - replicates strlen from the standard library
  * @s: string to be measured
  * Return: length of string
  */
+
 int _strlen(char *s)
 {
 	int i;
@@ -12,6 +14,7 @@ int _strlen(char *s)
 		;
 	return (i);
 }
+
 /**
  * _strncmp - compares two strings and returns their difference
  * @s1: the first string
@@ -19,6 +22,7 @@ int _strlen(char *s)
  * @bytes: number of bytes to compare
  * Return: number of bytes that differ
  */
+
 int _strncmp(char *s1, char *s2, size_t bytes)
 {
 	unsigned int i;
@@ -30,11 +34,13 @@ int _strncmp(char *s1, char *s2, size_t bytes)
 		;
 	return (s2[i] - s1[i]);
 }
+
 /**
   * _strdup - duplicates a string
   * @src: source to copy from
   * Return: pointer to malloc'd space
   **/
+
 char *_strdup(char *src)
 {
 	int len, i;
@@ -54,12 +60,14 @@ char *_strdup(char *src)
 	dest[i - 1] = '\0';
 	return (dest);
 }
+
 /**
   * _strcat_realloc - concatenates 2 strings and reallocates automatically
   * @dest: destination to copy to
   * @src: source to copy from
   * Return: pointer to concatenated strings
   **/
+
 char *_strcat_realloc(char *dest, char *src)
 {
 	unsigned int dest_len, src_len, i;
@@ -76,11 +84,13 @@ char *_strcat_realloc(char *dest, char *src)
 	dest[i + dest_len] = '\0';
 	return (dest);
 }
+
 /**
  * _atoi - converts a string to an integer
  * @s: the input string
  * Return: the converted int
  */
+
 int _atoi(char *s)
 {
 	int n, sign, result;
