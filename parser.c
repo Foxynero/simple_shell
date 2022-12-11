@@ -122,3 +122,6 @@ int main(void)
 			cmds = _strtok_r(NULL, "\n;", &saveptr);
 		}
 		free(buffer);
+	}
+	return (0);
+}
