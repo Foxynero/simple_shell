@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
   * list_from_path - builds a linked list from PATH
-  * Return: pointer to linked list
+  * Return: pointer to linked lists
   */
 env_t *list_from_path(void)
 {

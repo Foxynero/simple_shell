@@ -3,7 +3,7 @@
   * add_node - adds a new node to the end of a linked list
   * @head: head of the linked list
   * @str: string
-  * @len: length of the string
+  * @len: length of the strings
   * Return: pointer to the current position in the list
   **/
 env_t *add_node(env_t **head, char *str, unsigned int len)
