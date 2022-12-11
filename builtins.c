@@ -1,16 +1,16 @@
 #include "shell.h"
 
 /**
-  * is_builtin - checks if cmd is a builtin
-  * @cmd: command to find
-  * Return: On success - pointer to function, On Failure - NULL pointer
- (* other useful shell builtins:
- (* pwd, echo, pushd, popd, type
- (* * requires ^Z
- (* fg, bg
- (*  * Requires ^R
- (* reverse-i-search **HISTORY**
-*/
+ * is_builtin - checks if cmd is a builtin
+ * @cmd: command to find
+ * Return: On success - pointer to function, On Failure - NULL pointer
+ * other useful shell builtins:
+ * pwd, echo, pushd, popd, type
+ * * requires ^Z
+ * fg, bg
+ *  * Requires ^R
+ * reverse-i-search **HISTORY**
+ */
 
 int (*is_builtin(char *cmd))()
 {
@@ -37,13 +37,13 @@ int (*is_builtin(char *cmd))()
 }
 
 /**
-  * _exit_with_grace - Frees any remaining malloc'd spaces, and exits
-  * @linkedlist_path: Linked list to free.
-  * @buffer: buffer to free
-  * @tokens: Check for other inputs
- (* * CHANGE TO VARIADIC LIST.
-  * Return: -1 if exit fails.
-  */
+ * _exit_with_grace - Frees any remaining malloc'd spaces, and exits
+ * @linkedlist_path: Linked list to free.
+ * @buffer: buffer to free
+ * @tokens: Check for other inputs
+ * * CHANGE TO VARIADIC LIST.
+ * Return: -1 if exit fails.
+ */
 
 int _exit_with_grace(char **tokens, env_t *linkedlist_path, char *buffer)
 {
