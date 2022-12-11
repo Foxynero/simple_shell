@@ -1,0 +1,35 @@
+#include "shell.h"
+
+/**
+  * is_builtin - checks if cmd is a builtin
+  * @cmd: command to find
+  * Return: On success - pointer to function, On Failure - NULL pointer
+ (* other useful shell builtins:
+ (* pwd, echo, pushd, popd, type
+ (* * requires ^Z
+ (* fg, bg
+ (*  * Requires ^R
+ (* reverse-i-search **HISTORY**
+*/
+
+int (*is_builtin(char *cmd))()
+{
+	unsigned int i;
+	builtin_cmds_t builds[] = {
+		{"alias", _alias},
+
+		{"cd", _cd},
+
+		{"env", _env},
+
+		{"exit", _exit_with_grace},
+
+		{"history", _history},
+
+		{"setenv", _setenv_usr},
+
+		{"bowie", bowie},
+
+		{NULL, NULL}
+
+	};
