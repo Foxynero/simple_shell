@@ -107,3 +107,5 @@ char *_strtok_r(char *s, char *delim, char **save_ptr)
 		*s = '\0';
 		*save_ptr = s + 1;
 	}
+	return (token);
+}
