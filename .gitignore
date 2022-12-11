@@ -2,7 +2,7 @@
 *.swp
 a.out
 *.bkup
-hsh
+ssh
 _betty-d
 _betty-s
 
