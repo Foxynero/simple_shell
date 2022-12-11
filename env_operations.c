@@ -60,3 +60,8 @@ int _unsetenv(const char *name)
   * @overwrite: flag to determine whether to update if key exists
   * Return: 0 on success or -1 on failure
   */
+
+int _setenv(const char *name, const char *value, int overwrite)
+{
+	return (setenv(name, value, overwrite));
+}
