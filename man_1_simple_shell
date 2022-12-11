@@ -1,0 +1,24 @@
+.TH man 1 "11 December 2022" "0.01" "ssh man page"
+.SH NAME
+.B ssh
+- Simple Shell
+.SH SYNOPSIS
+.B ssh
+[No options yet]
+.SH DESCRIPTION
+.B ssh
+is a simple interactive command interpreter. It executes commands read from the standard input. ssh is not fully featured. It can only handle simple commands in the form: "<command> [options]"
+.SH BUILTIN COMMANDS
+.B cd
+- changes the working directory.
+.B env
+- print the environment
+.B exit
+- exit the shell gracefully.
+.B setenv
+- set an environmental variable.
+.SH BUGS
+May contain bugs
+.SH AUHTORS
+Foster Adu-Gyamfi
+Rowland Jones
