@@ -4,7 +4,7 @@
  * @ptr: pointer to original memory address
  * @old_size: old memory size
  * @new_size: new memory size
- * Return: new memory address
+ * Return: new memory address.
  */
 void *_realloc(char *ptr, unsigned int old_size, unsigned int new_size)
 {
