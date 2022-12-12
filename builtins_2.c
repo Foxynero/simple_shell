@@ -2,7 +2,7 @@
 /**
   * _setenv_usr - sets environmental variables as user defines
   * @tokens: KEY=VALUE pairs
-  * Return: 0 on success, -1 on failure
+  * Return: 0 on success, -1 on failure.
   */
 int _setenv_usr(char **tokens)
 {
