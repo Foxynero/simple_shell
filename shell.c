@@ -18,7 +18,7 @@ extern char **environ;
   * struct environ_type - linked list from PATH
   * @str: path in the format /usr/bin
   * @len: length of the string
-  * @next: points to the next node
+  * @next: points to the next node.
   */
 typedef struct environ_type
 {
